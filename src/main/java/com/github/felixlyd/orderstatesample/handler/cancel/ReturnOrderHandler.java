@@ -1,21 +1,21 @@
-package com.github.felixlyd.orderstatesample.service.impl;
+package com.github.felixlyd.orderstatesample.handler.cancel;
 
 import com.alibaba.cola.statemachine.Action;
 import com.alibaba.cola.statemachine.Condition;
+import com.github.felixlyd.orderstatesample.handler.OrderHandler;
 import com.github.felixlyd.orderstatesample.entity.dto.OrderContext;
 import com.github.felixlyd.orderstatesample.enums.EventsEnum;
 import com.github.felixlyd.orderstatesample.enums.OrderStatusEnum;
-import com.github.felixlyd.orderstatesample.service.OrderService;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 /**
- * class UseOrderServiceImpl: 内部使用订单方法
+ * class ReturnOrderHandler: do something
  *
  * @author : liuyaodong
  * @date 2023/4/25
  */
-@Service
-public class UseOrderServiceImpl implements OrderService {
+@Component
+public class ReturnOrderHandler implements OrderHandler {
     @Override
     public Condition<OrderContext> check() {
         return null;

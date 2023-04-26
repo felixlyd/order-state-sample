@@ -14,6 +14,7 @@ import lombok.Getter;
 public enum EventsEnum {
     Use("",""),
     Create("",""),
+    CreateAndUse("",""),
     Recharge("",""),
     RechargeFail("",""),
     Receive("",""),
@@ -22,6 +23,7 @@ public enum EventsEnum {
     Revoke("",""),
     Return("",""),
     Expire("",""),
+    Redo("","")
     ;
 
     private final String code;

@@ -10,8 +10,19 @@ import com.github.felixlyd.orderstatesample.entity.order.OrderRecord;
  * @author : liuyaodong
  * @date 2023/4/25
  */
-public class OrderContext {
+public class  OrderContext {
+    /**
+     * 订单
+     */
     private Order order;
+    /**
+     * 订单流水
+     */
     private OrderRecord orderRecord;
+    /**
+     * 商品订单
+     */
     private ItemsOrder itemsOrder;
+
+    private boolean isOk;
 }
